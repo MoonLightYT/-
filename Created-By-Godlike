@@ -2322,9 +2322,6 @@ Credits:AddLabel("LICENCING BELOW")
 Credits:AddLabel("This script is solely for the use of ysr_dotty and 𝐓𝐆𝐗 script. Any copying or distrubting loadstring with members who arent in the clan will lead to u being blacklisted from paid + public")
 Credits:AddLabel("Want anything updated??. Contact your clan leader the stuff u want added")
 
----Eat all Boosters---
-Foulder2:AddButton("Eat all boosters")
-
 
     
 
