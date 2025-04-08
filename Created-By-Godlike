@@ -1,7 +1,7 @@
 -- Whitelist for specific usernames 
 local whitelistedUsers = {
     "XxmanticoreYT",  -- Authorized user
-    -- You can add more usernames here
+    "khiylin222222",-- You can add more usernames here
 }
 
 -- Function to check if player is whitelisted
