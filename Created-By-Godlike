@@ -51,7 +51,7 @@ end
 
 -- Whitelist for specific usernames 
 local whitelistedUsers = {
-   "XxmanticoreYT ",  --whitelisted u can and more
+   "XxmanticoreYT",  --whitelisted u can and more
 
 }
 
