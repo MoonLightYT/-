@@ -2323,38 +2323,10 @@ Credits:AddLabel("This script is solely for the use of ysr_dotty and 𝐓𝐆�
 Credits:AddLabel("Want anything updated??. Contact your clan leader the stuff u want added")
 
 ---Eat all Boosters---
-Foulder2:AddButton("Eat all boosters", function()
-     local function eatBoosts()
-    local player = game.Players.LocalPlayer
-    local backpack = player.Backpack
-    local boosts = {"ULTRA Shake"} -- Corrected boost names
+Foulder2:AddButton("Eat all boosters")
 
-    for _, boostName in ipairs(boosts) do
-        local boost = backpack:FindFirstChild(boostName)
-        while boost do
-            -- Equip the boost item
-            boost.Parent = player.Character
-            -- Consume the boost item
-            boost:Activate()
-            -- Check for the next instance of the boost in the backpack
-            boost = backpack:FindFirstChild(boostName)
-        end
-    end
-end
 
-local function createEatBoostsGui()
-    local player = game.Players.LocalPlayer
-    local screenGui = Instance.new("ScreenGui")
-    screenGui.Name = "EatBoosts"
-    screenGui.Parent = player.PlayerGui
+    
 
-    local button = Instance.new("TextButton")
-    button.Size = UDim2.new(0, 200, 0, 50)
-    button.Position = UDim2.new(0.5, -100, 0.5, -25)
-    button.Text = "Eat All Boosts"
-    button.Parent = screenGui
 
-    button.MouseButton1Click:Connect(eatBoosts)
-end
 
-createEatBoostsGui()
